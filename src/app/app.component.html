@@ -1,0 +1,30 @@
+<!--<kendo-chart [categoryAxis]="{categories: years}">
+  <kendo-chart-title text="Student Exam Results"></kendo-chart-title>
+  <kendo-chart-legend position="bottom" orientation="vertical"></kendo-chart-legend>
+  <kendo-chart-tooltip></kendo-chart-tooltip>
+  <kendo-chart-series>
+    <kendo-chart-series-item *ngFor="let student of students" type="bar" [data]="student.results" [name]="student.name">
+
+    </kendo-chart-series-item>
+  </kendo-chart-series>
+</kendo-chart>-->
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"><b>Urban Yoga</b></a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a [routerLink]="['/Dashboard']">Dashboard</a></li>
+      <li><a [routerLink]="['/SignIn']">Sign In</a></li>
+      <li><a [routerLink]="['/Classes']">Classes</a></li>
+      <li><a [routerLink]="['/Workshops']">Workshops</a></li>
+      <li><a [routerLink]="['/Appointments']">Appointments</a></li>
+      <li><a [routerLink]="['/ClientHome']">Client Home</a></li>
+      <li><a [routerLink]="['/Retail']">Retail</a></li>
+    </ul>
+  </div>
+</nav>
+  <router-outlet></router-outlet>
+
+
+
